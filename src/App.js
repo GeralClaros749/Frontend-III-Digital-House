@@ -5,14 +5,22 @@
 // MÉTODOS: App debe tener un método para aumentar este número y que pueda ser ejecutado por su nieto Item.
 // PROPS: App deberá pasar por props lo necesario a sus componenetes internos.
 
-function App() {
+import Cabecera from './components/Cabecera';
+import Listado from './components/Listado';
+import React, { useState } from 'react';
 
-  return (
-    <div className="App">
-      <Cabecera />
-      <Listado />
-    </div>
-  );
+function App() {
+ const [contador, setContador] = useState(0);
+ const incrementar = () => {
+  setContador(contador + 1);
+ };
+
+ return (
+  <div className='App'>
+   <Cabecera stock={contador} />
+   <Listado actualizar={incrementar} />
+  </div>
+ );
 }
 
 export default App;
