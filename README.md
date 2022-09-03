@@ -1,6 +1,25 @@
-# Guía de consignas
+# Components
+### Cabecera
+Muestra los productos que se van agregando al carrito de compras
+### Listado
+Liata de items de los productos
+### Item
+Contenedor de la card para  mostrar cuando hay o no productos
 
-En cada uno de los componentes está detallado su funcionamiento.
+# Project
+
+### React: 18.1.0
+### Node: 18.17 .0
+
+# Run Projecy
+
+`npm install`
+`npm start`
+
+### View project
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.1.14:3000
 
 # Demo del proyecto
 
